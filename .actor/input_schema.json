@@ -1,0 +1,46 @@
+{
+    "title": "SEC 13D/13G Ownership Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "ticker": {
+            "title": "Ticker",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Stock ticker of the subject (target) company to filter by, e.g. \"AAPL\". Leave blank to search across all companies."
+        },
+        "keyword": {
+            "title": "Keyword",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Free-text search across the filing (e.g. a company or investor name). Leave blank, along with \"ticker\", to return all new 13D/13G filings market-wide."
+        },
+        "formType": {
+            "title": "Form type",
+            "type": "string",
+            "editor": "select",
+            "description": "13D signals activist or control intent (the filer may seek to influence management); 13G signals a passive stake (no such intent), typically filed by index funds and institutional holders.",
+            "enum": ["all", "13D", "13G"],
+            "enumTitles": ["Both 13D and 13G", "13D only (activist/control intent)", "13G only (passive stake)"],
+            "default": "all"
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many days back from today to search, by filing date.",
+            "default": 14,
+            "minimum": 1,
+            "maximum": 90
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of filings to return, most recently filed first.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 100
+        }
+    }
+}

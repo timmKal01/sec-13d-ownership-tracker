@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "sec-13d-ownership-tracker",
+    "title": "SEC 13D/13G Ownership Tracker — New 5%+ Stake Filings",
+    "description": "Track new SEC Schedule 13D and 13G filings — the disclosure an investor files within days of acquiring 5%+ ownership of a public company. 13D signals activist intent; 13G signals a passive stake. Search by ticker or keyword.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}

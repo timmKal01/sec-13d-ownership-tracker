@@ -1,0 +1,15 @@
+{
+    "name": "sec-13d-ownership-tracker",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Track new SEC Schedule 13D/13G beneficial ownership filings via the official EDGAR full text search API.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    }
+}

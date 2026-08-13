@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of SEC 13D/13G Ownership Tracker",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Filings",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}
